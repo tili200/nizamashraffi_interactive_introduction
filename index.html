@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Nizam Ashraffi | Academic & Creative Profile</title>
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            utm: {
+              maroon: '#540B1B',
+              maroonDark: '#33040E',
+              maroonDeep: '#1E0207',
+              wine: '#781329',
+              gold: '#E89B16',
+              goldLight: '#FBBF24',
+              goldMuted: '#B3750F',
+              goldGlow: 'rgba(232, 155, 22, 0.35)',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            display: ['Cinzel', 'serif'],
+            mono: ['Space Grotesk', 'monospace'],
+          },
+          animation: {
+            'spin-slow': 'spin 24s linear infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 5s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1E0207;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #540B1B;
+      border-radius: 4px;
+      border: 1px solid rgba(232, 155, 22, 0.3);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #781329;
+    }
+
+    /* Ambient lighting and glass gradients */
+    .bg-mesh-utm {
+      background: radial-gradient(circle at 15% 20%, rgba(120, 19, 41, 0.45) 0%, transparent 45%),
+                  radial-gradient(circle at 85% 75%, rgba(232, 155, 22, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 50% 50%, rgba(51, 4, 14, 0.95) 0%, #170105 100%);
+    }
+
+    .glass-card {
+      background: rgba(40, 5, 12, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(232, 155, 22, 0.22);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 214, 133, 0.1);
+    }
+
+    .glass-card-hover {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(232, 155, 22, 0.55);
+      box-shadow: 0 18px 40px -10px rgba(120, 19, 41, 0.5), 0 0 25px rgba(232, 155, 22, 0.18);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #FFE29F 0%, #F5B025 50%, #C47900 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .vinyl-grooves {
+      background: repeating-radial-gradient(
+        circle at 50% 50%,
+        #12080a,
+        #12080a 2px,
+        #240e15 3px,
+        #12080a 4px
+      );
+    }
+  </style>
+</head>
+
+<body class="bg-[#140105] text-stone-200 font-sans antialiased selection:bg-utm-gold selection:text-utm-maroonDeep relative min-h-screen">
+
+  <!-- Ambient Light Orbs -->
+  <div class="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-utm-wine/25 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute top-1/3 -right-40 w-[30rem] h-[30rem] bg-utm-gold/10 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-10 left-1/4 w-80 h-80 bg-utm-maroon/30 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#1a0208]/80 border-b border-utm-gold/20 transition-all duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Brand & Emblem Accent -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-utm-gold to-utm-goldMuted p-0.5 shadow-md shadow-utm-gold/20 flex items-center justify-center transition-transform group-hover:scale-105">
+          <div class="w-full h-full bg-utm-maroon rounded-full flex items-center justify-center text-utm-gold font-display font-bold text-sm tracking-wider">
+            UTM
+          </div>
+        </div>
+        <div>
+          <span class="block text-stone-100 font-semibold tracking-tight text-sm sm:text-base group-hover:text-utm-gold transition-colors">
+            Nizam Ashraffi
+          </span>
+          <span class="block text-[11px] font-mono text-utm-gold/80 tracking-wide uppercase">
+            EdTech & Instructional Design
+          </span>
+        </div>
+      </a>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-stone-300">
+        <a href="#bio-hub" class="hover:text-utm-gold transition-colors flex items-center gap-1.5">
+          <i data-lucide="user-check" class="w-4 h-4 text-utm-gold"></i> Formal Bio
+        </a>
+        <a href="#sonic-cycle" class="hover:text-utm-gold transition-colors flex items-center gap-1.5">
+          <i data-lucide="disc" class="w-4 h-4 text-utm-gold"></i> 2-Month Sonic Cycle
+        </a>
+        <a href="#domains" class="hover:text-utm-gold transition-colors flex items-center gap-1.5">
+          <i data-lucide="layers" class="w-4 h-4 text-utm-gold"></i> Core Practice
+        </a>
+        <a href="#beyond" class="hover:text-utm-gold transition-colors flex items-center gap-1.5">
+          <i data-lucide="sparkles" class="w-4 h-4 text-utm-gold"></i> Interests
+        </a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <button onclick="scrollToSection('contact')" class="px-4 py-2 rounded-full text-xs sm:text-sm font-medium bg-gradient-to-r from-utm-gold to-amber-500 text-utm-maroonDeep hover:brightness-110 active:scale-95 transition-all shadow-lg shadow-utm-gold/20 flex items-center gap-1.5 font-semibold">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <span>Get in Touch</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-10 sm:pt-16 pb-24 space-y-24 sm:space-y-32">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left: Intro & Role -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Badges -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-utm-maroon/80 border border-utm-gold/40 text-utm-goldLight shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Management & Science University (MSU)
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium bg-utm-wine/40 border border-utm-gold/30 text-amber-200">
+              <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-utm-gold"></i>
+              M.Ed Scholar @ UTM
+            </span>
+          </div>
+
+          <!-- Main Title -->
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight text-white leading-[1.15]">
+              Muhammad Nizam <br />
+              <span class="gold-gradient-text">Ashraffi</span>
+            </h1>
+            <p class="text-base sm:text-lg text-amber-100/80 font-sans max-w-2xl font-normal leading-relaxed pt-2">
+              Instructional Designer & Assistant Lecturer specializing in <span class="text-utm-gold font-medium">Open & Distance Learning (ODL)</span> architectures, digital learning tools, and transformative pedagogical experiences.
+            </p>
+          </div>
+
+          <!-- Quick Metrics / Pillars -->
+          <div class="grid grid-cols-3 gap-3 pt-2">
+            <div class="glass-card p-3 rounded-xl border-utm-gold/25">
+              <div class="text-utm-gold font-mono text-xl sm:text-2xl font-bold">ODL</div>
+              <div class="text-[11px] sm:text-xs text-stone-300 font-medium leading-tight mt-0.5">Course Design & Systems</div>
+            </div>
+            <div class="glass-card p-3 rounded-xl border-utm-gold/25">
+              <div class="text-utm-gold font-mono text-xl sm:text-2xl font-bold">B.Ed</div>
+              <div class="text-[11px] sm:text-xs text-stone-300 font-medium leading-tight mt-0.5">TESL Pedagogy Base</div>
+            </div>
+            <div class="glass-card p-3 rounded-xl border-utm-gold/25">
+              <div class="text-utm-gold font-mono text-xl sm:text-2xl font-bold">M.Ed</div>
+              <div class="text-[11px] sm:text-xs text-stone-300 font-medium leading-tight mt-0.5">EdTech Research @ UTM</div>
+            </div>
+          </div>
+
+          <!-- Action Controls -->
+          <div class="flex flex-wrap items-center gap-3 pt-3">
+            <a href="#sonic-cycle" class="px-5 py-3 rounded-xl bg-gradient-to-r from-utm-wine to-utm-maroon border border-utm-gold/40 text-stone-100 font-medium text-sm hover:border-utm-gold transition-all flex items-center gap-2 shadow-lg shadow-black/40 group">
+              <i data-lucide="headphones" class="w-4 h-4 text-utm-gold group-hover:rotate-12 transition-transform"></i>
+              <span>Explore My Music Phase</span>
+            </a>
+            <a href="#bio-hub" class="px-5 py-3 rounded-xl bg-stone-900/60 border border-stone-700/60 text-stone-300 font-medium text-sm hover:text-white hover:border-utm-gold/50 transition-all flex items-center gap-2">
+              <i data-lucide="file-text" class="w-4 h-4 text-utm-gold"></i>
+              <span>Formal Bio Variants</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: UTM Emblem Interactive Showcase & Mini Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            
+            <!-- Glowing ambient halo -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-utm-gold/20 to-utm-wine/40 rounded-3xl blur-2xl -z-10"></div>
+            
+            <!-- Academic Passport Card -->
+            <div class="glass-card rounded-2xl p-6 sm:p-7 border-utm-gold/30 relative overflow-hidden">
+              
+              <!-- Top Gold Crest Accent -->
+              <div class="flex items-center justify-between pb-4 border-b border-utm-gold/20">
+                <div class="flex items-center gap-3">
+                  <!-- Stylized UTM Seal Circle -->
+                  <div class="w-12 h-12 rounded-full border-2 border-utm-gold bg-utm-maroon flex items-center justify-center p-1.5 shadow-inner">
+                    <svg viewBox="0 0 100 100" class="w-full h-full fill-utm-gold">
+                      <!-- Stylized UTM Open Book & Spherical Crest motif -->
+                      <path d="M50 18 C38 18 28 27 28 39 C28 50 38 60 50 60 C62 60 72 50 72 39 C72 27 62 18 50 18 Z M50 25 C58 25 64 31 64 39 C64 47 58 53 50 53 C42 53 36 47 36 39 C36 31 42 25 50 25 Z" />
+                      <rect x="30" y="65" width="40" height="7" rx="3" />
+                      <path d="M22 78 Q50 68 78 78 L78 85 Q50 75 22 85 Z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <span class="text-xs uppercase font-mono tracking-widest text-utm-gold font-bold">UTM Scholar</span>
+                    <h3 class="text-sm font-semibold text-white tracking-wide">Universiti Teknologi Malaysia</h3>
+                  </div>
+                </div>
+                <div class="w-3 h-3 rounded-full bg-utm-gold animate-ping"></div>
+              </div>
+
+              <!-- Content details -->
+              <div class="py-5 space-y-3.5 text-xs sm:text-sm">
+                <div class="flex items-start justify-between gap-3">
+                  <span class="text-stone-400 font-mono text-xs">Primary Role</span>
+                  <span class="text-right text-stone-200 font-medium">Assistant Lecturer & Instructional Designer</span>
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <span class="text-stone-400 font-mono text-xs">Institution</span>
+                  <span class="text-right text-stone-200 font-medium">Management & Science University</span>
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <span class="text-stone-400 font-mono text-xs">Postgraduate</span>
+                  <span class="text-right text-utm-gold font-medium">M.Ed Educational Technology (UTM)</span>
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <span class="text-stone-400 font-mono text-xs">Specialization</span>
+                  <span class="text-right text-stone-200 font-medium">Digital Pedagogy & ODL Modules</span>
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <span class="text-stone-400 font-mono text-xs">Current Rhythm</span>
+                  <span class="text-right font-medium text-amber-300">Rock Resurgence (2-Mo Phase)</span>
+                </div>
+              </div>
+
+              <!-- Motto banner -->
+              <div class="pt-3 border-t border-utm-gold/20 flex items-center justify-between">
+                <span class="text-[11px] font-display uppercase tracking-widest text-utm-goldMuted">
+                  "Kerana Tuhan Untuk Manusia"
+                </span>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-utm-maroon text-utm-gold border border-utm-gold/30">
+                  MY · Shah Alam
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== BIO SWITCHER SECTION ==================== -->
+    <section id="bio-hub" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-utm-gold/25 pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-utm-gold text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="file-check-2" class="w-4 h-4"></i>
+            Formal Profile Generator
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white mt-1">
+            Curated Formal Descriptions
+          </h2>
+        </div>
+        <div class="text-xs text-stone-400 font-mono">
+          Switch tone & copy directly for official usage
+        </div>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="flex flex-wrap gap-2 p-1.5 rounded-xl bg-utm-maroonDeep/90 border border-utm-gold/30">
+        <button onclick="switchBio('firstPerson')" id="tab-firstPerson" class="bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all bg-utm-gold text-utm-maroonDeep font-semibold shadow-sm">
+          First-Person Professional
+        </button>
+        <button onclick="switchBio('thirdPerson')" id="tab-thirdPerson" class="bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-stone-300 hover:text-white">
+          Third-Person Academic (MSU/UTM)
+        </button>
+        <button onclick="switchBio('shortElevator')" id="tab-shortElevator" class="bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-stone-300 hover:text-white">
+          Short Profile (~60 words)
+        </button>
+        <button onclick="switchBio('musicHighlight')" id="tab-musicHighlight" class="bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-stone-300 hover:text-white">
+          Creative / Music Focus
+        </button>
+      </div>
+
+      <!-- Bio Display Box -->
+      <div class="glass-card rounded-2xl p-6 sm:p-8 relative border-utm-gold/35">
+        <div class="flex items-center justify-between pb-4 mb-4 border-b border-stone-800">
+          <div class="flex items-center gap-2">
+            <span id="bio-category-tag" class="px-2.5 py-1 rounded text-[11px] font-mono uppercase tracking-wider bg-utm-maroon text-utm-goldLight border border-utm-gold/40">
+              First-Person Narrative
+            </span>
+            <span id="bio-word-count" class="text-xs text-stone-400 font-mono">~105 words</span>
+          </div>
+
+          <!-- Copy Button -->
+          <button onclick="copyCurrentBio()" class="px-3.5 py-1.5 rounded-lg bg-utm-maroon hover:bg-utm-wine border border-utm-gold/40 text-xs sm:text-sm text-amber-200 flex items-center gap-2 transition-all active:scale-95">
+            <i data-lucide="copy" class="w-3.5 h-3.5 text-utm-gold"></i>
+            <span id="copy-btn-text">Copy Bio</span>
+          </button>
+        </div>
+
+        <!-- The Text Content -->
+        <blockquote id="bio-text-content" class="text-stone-200 text-sm sm:text-base leading-relaxed font-sans sm:leading-loose">
+          I serve as an Assistant Lecturer and Instructional Designer in the Academic Office at Management & Science University (MSU) in Shah Alam, where I spearhead the creation of high-impact Open and Distance Learning (ODL) environments and digital learning assets. Grounded by a background in Teaching English as a Second Language (TESL) and currently undertaking Master of Education research in Educational Technology at Universiti Teknologi Malaysia (UTM), I work to unify sound pedagogy with modern instructional systems. Beyond academia, I am an omnivorous music listener with an ear that rotates through distinct 2-month cyclical phases across rock, indie, and electronic landscapes.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ==================== THE 2-MONTH SONIC CYCLE HUB ==================== -->
+    <section id="sonic-cycle" class="space-y-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-utm-gold/25 pb-4">
+        <div>
+          <div class="inline-flex items-center gap-2 text-utm-gold text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="radio" class="w-4 h-4 animate-pulse"></i>
+            Musical Architecture & Habit
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white mt-1">
+            The 2-Month Sonic Cycle
+          </h2>
+        </div>
+        <div class="text-xs text-stone-400 font-sans max-w-sm">
+          "I listen to all kinds of music based on my mood in 2-month periods, then shift to a previous obsession or forge a fresh sound."
+        </div>
+      </div>
+
+      <!-- Main Interactive Player Station -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border-utm-gold/35 relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Turntable Vinyl Simulation -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            
+            <div class="relative w-56 h-56 sm:w-64 sm:h-64 flex items-center justify-center">
+              <!-- Outer Glow -->
+              <div id="vinyl-glow" class="absolute inset-0 rounded-full bg-utm-gold/15 blur-xl transition-all duration-500"></div>
+              
+              <!-- Vinyl Record -->
+              <div id="vinyl-disc" class="w-full h-full rounded-full vinyl-grooves border-4 border-stone-800 shadow-2xl relative flex items-center justify-center transition-transform">
+                
+                <!-- Center Label (Themed with UTM Colors) -->
+                <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-utm-maroon to-utm-maroonDark border-2 border-utm-gold flex flex-col items-center justify-center text-center p-2 shadow-inner">
+                  <div class="w-4 h-4 rounded-full bg-utm-maroonDeep border-2 border-utm-gold/80 mb-1"></div>
+                  <span id="vinyl-genre-label" class="text-[9px] font-mono uppercase tracking-wider text-utm-gold font-bold leading-tight">
+                    ROCK ERA
+                  </span>
+                  <span class="text-[8px] text-stone-400 font-mono">Phase 2026.1</span>
+                </div>
+              </div>
+
+              <!-- Tonearm decoration -->
+              <div class="absolute -top-3 -right-2 w-16 h-28 pointer-events-none">
+                <div class="w-2 h-20 bg-stone-500 rounded-full origin-top transform rotate-12 shadow-md"></div>
+                <div class="w-3 h-4 bg-utm-gold rounded-sm -ml-0.5 shadow-md"></div>
+              </div>
+            </div>
+
+            <!-- Player Status Indicator -->
+            <div class="mt-5 flex items-center gap-3">
+              <button onclick="toggleAudioPreview()" id="play-pause-btn" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-utm-gold to-amber-500 text-utm-maroonDeep font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-utm-gold/25 hover:brightness-110 active:scale-95 transition-all">
+                <i id="play-icon" data-lucide="play" class="w-4 h-4 fill-current"></i>
+                <span id="play-text">Simulate Mood Audio</span>
+              </button>
+              <span id="audio-status-tag" class="text-xs font-mono text-stone-400">Synth Engine Idle</span>
+            </div>
+            
+            <p class="text-[11px] text-stone-400 font-mono mt-2 text-center">
+              Uses live Web Audio synthesizer (no external streaming needed)
+            </p>
+          </div>
+
+          <!-- Controls & Phase Breakdown -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono mb-2">
+                <span class="text-utm-gold font-semibold flex items-center gap-1.5">
+                  <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i> SELECT ACTIVE PHASE CYCLE
+                </span>
+                <span id="cycle-duration" class="text-stone-400">Day 24 of 60 in Current Rotation</span>
+              </div>
+
+              <!-- Phase Selector Tabs -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                
+                <!-- Phase 1: Rock -->
+                <button onclick="selectMusicPhase(0)" id="phase-card-0" class="phase-selector p-3 rounded-xl border border-utm-gold bg-utm-maroon/70 text-left transition-all">
+                  <div class="text-[10px] font-mono text-utm-gold font-bold flex items-center justify-between">
+                    <span>NOW</span>
+                    <i data-lucide="flame" class="w-3 h-3 text-utm-gold"></i>
+                  </div>
+                  <div class="text-xs sm:text-sm font-semibold text-white mt-1">High-Energy Rock</div>
+                  <div class="text-[10px] text-stone-300">Overdrive & Riffs</div>
+                </button>
+
+                <!-- Phase 2: Synth/Indie -->
+                <button onclick="selectMusicPhase(1)" id="phase-card-1" class="phase-selector p-3 rounded-xl border border-stone-800 bg-stone-900/60 text-left transition-all hover:border-utm-gold/40">
+                  <div class="text-[10px] font-mono text-stone-400 font-bold flex items-center justify-between">
+                    <span>PREVIOUS</span>
+                    <i data-lucide="sparkles" class="w-3 h-3 text-purple-400"></i>
+                  </div>
+                  <div class="text-xs sm:text-sm font-semibold text-white mt-1">Synth & Indie</div>
+                  <div class="text-[10px] text-stone-400">Neon Melodies</div>
+                </button>
+
+                <!-- Phase 3: Post-Rock / Atmospheric -->
+                <button onclick="selectMusicPhase(2)" id="phase-card-2" class="phase-selector p-3 rounded-xl border border-stone-800 bg-stone-900/60 text-left transition-all hover:border-utm-gold/40">
+                  <div class="text-[10px] font-mono text-stone-400 font-bold flex items-center justify-between">
+                    <span>FOCUS</span>
+                    <i data-lucide="wind" class="w-3 h-3 text-cyan-400"></i>
+                  </div>
+                  <div class="text-xs sm:text-sm font-semibold text-white mt-1">Post-Rock Ambient</div>
+                  <div class="text-[10px] text-stone-400">Deep Work Waves</div>
+                </button>
+
+                <!-- Phase 4: Lo-Fi & Soul -->
+                <button onclick="selectMusicPhase(3)" id="phase-card-3" class="phase-selector p-3 rounded-xl border border-stone-800 bg-stone-900/60 text-left transition-all hover:border-utm-gold/40">
+                  <div class="text-[10px] font-mono text-stone-400 font-bold flex items-center justify-between">
+                    <span>CHILL</span>
+                    <i data-lucide="coffee" class="w-3 h-3 text-amber-400"></i>
+                  </div>
+                  <div class="text-xs sm:text-sm font-semibold text-white mt-1">Lo-Fi & Acoustic</div>
+                  <div class="text-[10px] text-stone-400">Organic Warmth</div>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Active Phase Description Card -->
+            <div class="p-4 sm:p-5 rounded-2xl bg-black/40 border border-utm-gold/25 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 id="phase-title" class="text-lg font-serif font-bold text-utm-goldLight">
+                    The Rock Resurgence Phase
+                  </h4>
+                  <p id="phase-subtitle" class="text-xs text-stone-300 font-mono">
+                    Current Rotation · Swapped back from 2 months of synth-pop
+                  </p>
+                </div>
+                <span id="phase-tempo-tag" class="px-2.5 py-1 rounded-md text-xs font-mono bg-utm-maroon text-utm-gold border border-utm-gold/30">
+                  138 BPM · Raw Energy
+                </span>
+              </div>
+
+              <p id="phase-desc" class="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">
+                "Right now, I've cycled back into dynamic rock and alternative crunch. After two solid months immersed in lush synths and airy indie arrangements, the high-gain guitar textures, driving basslines, and punchy drum fills are fueling my lesson design workflows."
+              </p>
+
+              <!-- Live Visualizer Canvas -->
+              <div class="space-y-1 pt-1">
+                <div class="flex items-center justify-between text-[11px] font-mono text-stone-400">
+                  <span>SPECTRUM FREQUENCY VISUALIZER</span>
+                  <span id="visualizer-state" class="text-utm-gold">Active Waveform</span>
+                </div>
+                <div class="w-full h-14 bg-stone-950/90 rounded-lg p-1.5 border border-utm-gold/20 flex items-center justify-center">
+                  <canvas id="musicCanvas" class="w-full h-full block rounded"></canvas>
+                </div>
+              </div>
+
+              <!-- Favorite representative elements -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span id="tag-1" class="px-2.5 py-1 rounded-full text-[11px] font-mono bg-utm-wine/40 text-stone-200 border border-utm-gold/20">Overdriven Guitars</span>
+                <span id="tag-2" class="px-2.5 py-1 rounded-full text-[11px] font-mono bg-utm-wine/40 text-stone-200 border border-utm-gold/20">Fast Driving Tempos</span>
+                <span id="tag-3" class="px-2.5 py-1 rounded-full text-[11px] font-mono bg-utm-wine/40 text-stone-200 border border-utm-gold/20">High Focus Ignition</span>
+              </div>
+
+            </div>
+
+            <!-- Track Suggestion Box -->
+            <div class="p-3.5 rounded-xl bg-utm-maroon/30 border border-utm-gold/20 flex flex-col sm:flex-row items-center gap-3">
+              <div class="text-xs text-stone-300 font-sans flex items-center gap-2 flex-1">
+                <i data-lucide="plus-circle" class="w-4 h-4 text-utm-gold shrink-0"></i>
+                <span>Have a track for my next rotation? Drop a song name:</span>
+              </div>
+              <div class="flex items-center gap-2 w-full sm:w-auto">
+                <input id="rec-input" type="text" placeholder="Artist - Song title" class="px-3 py-1.5 text-xs rounded-lg bg-black/60 border border-stone-700 text-stone-100 placeholder-stone-500 focus:outline-none focus:border-utm-gold flex-1 sm:w-48">
+                <button onclick="submitRecommendation()" class="px-3 py-1.5 rounded-lg bg-utm-gold text-utm-maroonDeep font-semibold text-xs hover:brightness-110 active:scale-95 transition-all">
+                  Suggest
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROFESSIONAL PRACTICE DOMAINS ==================== -->
+    <section id="domains" class="space-y-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-utm-gold/25 pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-utm-gold text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="compass" class="w-4 h-4"></i>
+            Professional Spectrum
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white mt-1">
+            Core Practice & Research
+          </h2>
+        </div>
+        <div class="text-xs text-stone-400 font-mono">
+          Pedagogy · Architecture · Technological Innovation
+        </div>
+      </div>
+
+      <!-- Grid Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="glass-card glass-card-hover rounded-2xl p-6 border-utm-gold/30 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-utm-maroon border border-utm-gold/40 flex items-center justify-center text-utm-gold shadow-md">
+              <i data-lucide="book-open-check" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-utm-gold uppercase tracking-wider font-semibold">MSU Academic Office</span>
+              <h3 class="text-lg font-serif font-bold text-white mt-0.5">Instructional Design & ODL</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">
+              Spearheading online and distance learning course architecture. Designing structured asynchronous modules, interactive assessments, and clear pedagogical journeys that empower adult and remote learners.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 text-[11px] font-mono text-utm-gold flex items-center justify-between">
+            <span>Modular Courseware</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card glass-card-hover rounded-2xl p-6 border-utm-gold/30 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-utm-maroon border border-utm-gold/40 flex items-center justify-center text-utm-gold shadow-md">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-utm-gold uppercase tracking-wider font-semibold">UTM Postgraduate Research</span>
+              <h3 class="text-lg font-serif font-bold text-white mt-0.5">Educational Technology</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">
+              Investigating the integration of modern digital learning frameworks, learner engagement metrics, and emerging AI tools into higher education environments as an M.Ed candidate at Universiti Teknologi Malaysia.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 text-[11px] font-mono text-utm-gold flex items-center justify-between">
+            <span>Pedagogical Innovation</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card glass-card-hover rounded-2xl p-6 border-utm-gold/30 flex flex-col justify-between space-y-4">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-xl bg-utm-maroon border border-utm-gold/40 flex items-center justify-center text-utm-gold shadow-md">
+              <i data-lucide="palette" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-[11px] font-mono text-utm-gold uppercase tracking-wider font-semibold">Applied TESL & Media</span>
+              <h3 class="text-lg font-serif font-bold text-white mt-0.5">Media-Rich Learning Assets</h3>
+            </div>
+            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans">
+              Combining a Bachelor of Education in TESL background with multimedia technology to craft engaging audio-visual educational content, language learning scaffolds, and intuitive learner experiences.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-stone-800 text-[11px] font-mono text-utm-gold flex items-center justify-between">
+            <span>Interactive Media</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== BEYOND THE DESK (INTERESTS) ==================== -->
+    <section id="beyond" class="space-y-8">
+      
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-utm-gold/25 pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-utm-gold text-xs font-mono tracking-widest uppercase">
+            <i data-lucide="heart" class="w-4 h-4"></i>
+            Personal Rhythm
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white mt-1">
+            Beyond the Syllabus
+          </h2>
+        </div>
+        <div class="text-xs text-stone-400 font-mono">
+          Creative balance & personal interests
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        
+        <!-- Interest 1: Cyclical Music -->
+        <div class="glass-card p-5 rounded-2xl border-utm-gold/20 hover:border-utm-gold/50 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-utm-maroon text-utm-gold flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="disc-3" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif font-bold text-white text-base">Eclectic Music Shifts</h4>
+          <p class="text-xs text-stone-300 mt-2 leading-relaxed font-sans">
+            Rotating auditory chapters every 60 days. Alternating between intense rock chords, ambient post-rock reverbs, and catchy synth hooks.
+          </p>
+        </div>
+
+        <!-- Interest 2: Tech Experiments -->
+        <div class="glass-card p-5 rounded-2xl border-utm-gold/20 hover:border-utm-gold/50 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-utm-maroon text-utm-gold flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="terminal" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif font-bold text-white text-base">EdTech Tooling</h4>
+          <p class="text-xs text-stone-300 mt-2 leading-relaxed font-sans">
+            Testing novel productivity workflows, LMS extensions, interactive widgets, and generative AI scaffolds for future classroom workflows.
+          </p>
+        </div>
+
+        <!-- Interest 3: Coffee & Design -->
+        <div class="glass-card p-5 rounded-2xl border-utm-gold/20 hover:border-utm-gold/50 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-utm-maroon text-utm-gold flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="coffee" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif font-bold text-white text-base">Workspace Sanctuary</h4>
+          <p class="text-xs text-stone-300 mt-2 leading-relaxed font-sans">
+            Curating high-focus acoustic environments, mechanical keyboard builds, and clean aesthetic desk setups to maximize instructional clarity.
+          </p>
+        </div>
+
+        <!-- Interest 4: Tactical Gaming -->
+        <div class="glass-card p-5 rounded-2xl border-utm-gold/20 hover:border-utm-gold/50 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-utm-maroon text-utm-gold flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+            <i data-lucide="gamepad-2" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-serif font-bold text-white text-base">Interactive Narratives</h4>
+          <p class="text-xs text-stone-300 mt-2 leading-relaxed font-sans">
+            Appreciating video game user experiences, branching storylines, and co-op tactical game mechanics that translate into gamified learning.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== CONNECT & INTERACTIVE V-CARD ==================== -->
+    <section id="contact" class="space-y-8">
+      
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border-utm-gold/40 relative overflow-hidden">
+        
+        <!-- Background Crest Stamp -->
+        <div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full border-8 border-utm-gold/10 pointer-events-none flex items-center justify-center">
+          <div class="w-56 h-56 rounded-full border-4 border-utm-maroon/20"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-mono uppercase tracking-widest text-utm-gold font-bold">
+              Let's Collaborate
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white">
+              Connect for Academic, ODL & EdTech Initiatives
+            </h2>
+            <p class="text-xs sm:text-sm text-stone-300 leading-relaxed font-sans max-w-lg">
+              Whether you are discussing instructional design strategies, educational technology research partnerships, or trading eclectic music playlists, feel free to reach out.
+            </p>
+
+            <div class="space-y-2.5 pt-2 text-xs sm:text-sm font-mono text-stone-300">
+              <div class="flex items-center gap-3">
+                <i data-lucide="map-pin" class="w-4 h-4 text-utm-gold"></i>
+                <span>Academic Office, Management & Science University (MSU), Shah Alam</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="graduation-cap" class="w-4 h-4 text-utm-gold"></i>
+                <span>Universiti Teknologi Malaysia (UTM) · M.Ed Researcher</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Contact Note -->
+          <div class="lg:col-span-5 bg-black/50 p-5 sm:p-6 rounded-2xl border border-utm-gold/30 space-y-4">
+            <h4 class="text-sm font-serif font-bold text-white flex items-center gap-2">
+              <i data-lucide="send" class="w-4 h-4 text-utm-gold"></i>
+              Send a Quick Greeting / Note
+            </h4>
+            
+            <div class="space-y-3 text-xs">
+              <div>
+                <label class="block text-stone-400 font-mono mb-1">Your Name or Organization</label>
+                <input id="sender-name" type="text" placeholder="e.g. Fellow EdTech Scholar / Colleague" class="w-full px-3 py-2 rounded-lg bg-stone-900 border border-stone-700 text-stone-200 focus:outline-none focus:border-utm-gold">
+              </div>
+              <div>
+                <label class="block text-stone-400 font-mono mb-1">Message or Music Note</label>
+                <textarea id="sender-msg" rows="3" placeholder="Hello Nizam, let's connect on instructional frameworks..." class="w-full px-3 py-2 rounded-lg bg-stone-900 border border-stone-700 text-stone-200 focus:outline-none focus:border-utm-gold resize-none"></textarea>
+              </div>
+              <button onclick="handleSendMessage()" class="w-full py-2.5 rounded-lg bg-gradient-to-r from-utm-gold to-amber-500 text-utm-maroonDeep font-bold text-xs uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-md shadow-utm-gold/20">
+                Send Note
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-utm-gold/20 bg-utm-maroonDeep py-10 relative z-10 text-xs text-stone-400 font-sans">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full border border-utm-gold/60 bg-utm-maroon flex items-center justify-center text-utm-gold font-display font-bold text-xs">
+          UTM
+        </div>
+        <div>
+          <span class="text-stone-200 font-semibold block">Muhammad Nizam Ashraffi</span>
+          <span class="text-[11px] text-utm-gold/80 font-mono">MSU Academic Office · UTM Postgraduate</span>
+        </div>
+      </div>
+
+      <div class="text-center sm:text-right font-mono text-[11px] text-stone-400">
+        <span class="text-utm-gold/90">"Kerana Tuhan Untuk Manusia"</span>
+        <div class="mt-0.5 text-stone-500">Themed in UTM Royal Maroon & Warm Amber Gold</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="glass-card px-4 py-3 rounded-xl border border-utm-gold bg-utm-maroonDeep/95 text-stone-100 text-xs sm:text-sm font-sans flex items-center gap-3 shadow-2xl">
+      <div class="w-6 h-6 rounded-full bg-utm-gold text-utm-maroonDeep flex items-center justify-center shrink-0">
+        <i data-lucide="check" class="w-4 h-4 stroke-[3]"></i>
+      </div>
+      <span id="toast-message">Bio copied to clipboard!</span>
+    </div>
+  </div>
+
+  <!-- ==================== LOGIC SCRIPTS ==================== -->
+  <script>
+    // Initialize Lucide Icons
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+      initCanvasVisualizer();
+    });
+
+    // Scroll helper
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // ==================== BIO SWITCHER LOGIC ====================
+    const bioData = {
+      firstPerson: {
+        category: "First-Person Narrative",
+        wordCount: "~105 words",
+        text: `I serve as an Assistant Lecturer and Instructional Designer in the Academic Office at Management & Science University (MSU) in Shah Alam, where I lead the design of Open and Distance Learning (ODL) environments and digital learning assets. Grounded by a background in Teaching English as a Second Language (TESL) and currently undertaking Master of Education research in Educational Technology at Universiti Teknologi Malaysia (UTM), I work to bridge instructional theory with modern learning technologies. Outside of academia, I am an avid music listener whose taste moves in distinct 2-month cyclical phases across rock, indie, and electronic landscapes.`
+      },
+      thirdPerson: {
+        category: "Third-Person Academic Directory",
+        wordCount: "~115 words",
+        text: `Muhammad Nizam Ashraffi is an Assistant Lecturer and Instructional Designer in the Academic Office at Management & Science University (MSU) in Shah Alam, Selangor. His professional focus centers on curriculum modernization, digital pedagogy, and the design and implementation of Open and Distance Learning (ODL) frameworks. Holding a Bachelor of Education in Teaching English as a Second Language (TESL) from MSU, he is currently advancing his research in educational innovation through a Master of Education in Educational Technology at Universiti Teknologi Malaysia (UTM). Beyond his instructional work, he is an eclectic music listener who regularly rotates through diverse musical genres in focused two-month periods.`
+      },
+      shortElevator: {
+        category: "Short Executive Bio",
+        wordCount: "~55 words",
+        text: `I am an Instructional Designer and Assistant Lecturer at Management & Science University (MSU) and an M.Ed candidate in Educational Technology at Universiti Teknologi Malaysia (UTM). I specialize in ODL course design, digital pedagogy, and learning media architectures, complemented by a personal passion for exploring music across dynamic two-month cycles.`
+      },
+      musicHighlight: {
+        category: "Creative & Music Focus",
+        wordCount: "~70 words",
+        text: `Operating at the intersection of digital pedagogy and course design, I work as an Instructional Designer at MSU while researching Educational Technology at UTM. Outside the academic sphere, I maintain a dynamic connection to music, cycling through immersive phases across virtually every genre on a two-month rhythm—currently anchored in high-energy rock after rotating out of indie and synth-driven sounds.`
+      }
+    };
+
+    let activeBioKey = 'firstPerson';
+
+    function switchBio(key) {
+      activeBioKey = key;
+      const data = bioData[key];
+      
+      // Update DOM
+      document.getElementById('bio-category-tag').textContent = data.category;
+      document.getElementById('bio-word-count').textContent = data.wordCount;
+      document.getElementById('bio-text-content').textContent = data.text;
+
+      // Update Tab Styles
+      const tabs = ['firstPerson', 'thirdPerson', 'shortElevator', 'musicHighlight'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-${t}`);
+        if (t === key) {
+          btn.className = "bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all bg-utm-gold text-utm-maroonDeep font-semibold shadow-sm";
+        } else {
+          btn.className = "bio-tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-stone-300 hover:text-white";
+        }
+      });
+    }
+
+    // Robust Clipboard Copy Function
+    function copyCurrentBio() {
+      const textToCopy = bioData[activeBioKey].text;
+      
+      // Attempt modern clipboard API first, fallback to execCommand for iframes
+      let successful = false;
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          showToast("Bio copied to clipboard!");
+        }).catch(() => {
+          fallbackCopyText(textToCopy);
+        });
+      } else {
+        fallbackCopyText(textToCopy);
+      }
+    }
+
+    function fallbackCopyText(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      textArea.style.left = "-999999px";
+      textArea.style.top = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast("Bio copied to clipboard!");
+      } catch (err) {
+        showToast("Press Ctrl+C to copy manually");
+      }
+      document.body.removeChild(textArea);
+    }
+
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 3200);
+    }
+
+    // ==================== 2-MONTH SONIC CYCLE PHASES ====================
+    const musicPhases = [
+      {
+        genreName: "ROCK ERA",
+        title: "The Rock Resurgence Phase",
+        subtitle: "Current Active Rotation · Swapped back from 2 months of synth-pop",
+        tempo: "138 BPM · Raw Overdrive",
+        desc: "Right now, I've cycled back into dynamic rock and alternative crunch. After two solid months immersed in lush synths and airy indie arrangements, the high-gain guitar textures, driving basslines, and punchy drum fills are fueling my lesson design workflows.",
+        tags: ["Overdriven Guitars", "Fast Driving Tempos", "High Focus Ignition"],
+        cycleStatus: "Day 24 of 60 in Current Rotation",
+        synthType: "rock",
+        colorGlow: "rgba(232, 155, 22, 0.4)"
+      },
+      {
+        genreName: "INDIE / SYNTH",
+        title: "Dreamy Indie & Synth-Pop Phase",
+        subtitle: "Prior 2-Month Phase · Neon arpeggios & pastel guitar riffs",
+        tempo: "115 BPM · Melodic Pulse",
+        desc: "My previous 60-day period was governed by luminous synthesizers, indie dream-pop guitars, and reverberating vocal hooks. An inspiring, nostalgic soundscape ideal for expansive brainstorming and creative layout design.",
+        tags: ["Vintage Analog Synths", "Chorus Guitar Pedals", "Atmospheric Hooks"],
+        cycleStatus: "Concluded · Scheduled for Future Rotation",
+        synthType: "synth",
+        colorGlow: "rgba(168, 85, 247, 0.4)"
+      },
+      {
+        genreName: "POST-ROCK",
+        title: "Atmospheric Post-Rock & Shoegaze",
+        subtitle: "Deep Focus Phase · Instrumental builds & layered delays",
+        tempo: "90 BPM · Slow Crescendos",
+        desc: "When deep cognitive immersion is required—such as conducting literature reviews or architecting LMS course taxonomies—I shift into post-rock and shoegaze. Extended 8-minute sonic progressions without vocals create an impenetrable flow state.",
+        tags: ["Layered Reverbs", "Wall of Sound", "Deep Research Flow"],
+        cycleStatus: "Rotation Option · Deep Work Mode",
+        synthType: "ambient",
+        colorGlow: "rgba(6, 182, 212, 0.4)"
+      },
+      {
+        genreName: "LO-FI SOUL",
+        title: "Lo-Fi Beats & Acoustic Soul",
+        subtitle: "Relaxation Phase · Warm tape saturation & mellow bass",
+        tempo: "78 BPM · Organic Groove",
+        desc: "A restorative cycle built on dusty Rhodes piano chords, vinyl crackle, acoustic strums, and warm syncopated boom-bap drums. It serves as my decompression sanctuary between academic deadlines.",
+        tags: ["Vinyl Crackle", "Warm Rhodes Piano", "Afternoon Decompression"],
+        cycleStatus: "Rotation Option · Weekend Rhythm",
+        synthType: "lofi",
+        colorGlow: "rgba(245, 158, 11, 0.4)"
+      }
+    ];
+
+    let currentPhaseIndex = 0;
+
+    function selectMusicPhase(index) {
+      currentPhaseIndex = index;
+      const phase = musicPhases[index];
+
+      // Update Phase Cards Highlight
+      for (let i = 0; i < 4; i++) {
+        const card = document.getElementById(`phase-card-${i}`);
+        if (i === index) {
+          card.className = "phase-selector p-3 rounded-xl border border-utm-gold bg-utm-maroon/70 text-left transition-all shadow-md";
+        } else {
+          card.className = "phase-selector p-3 rounded-xl border border-stone-800 bg-stone-900/60 text-left transition-all hover:border-utm-gold/40";
+        }
+      }
+
+      // Update Vinyl & Details
+      document.getElementById('vinyl-genre-label').textContent = phase.genreName;
+      document.getElementById('phase-title').textContent = phase.title;
+      document.getElementById('phase-subtitle').textContent = phase.subtitle;
+      document.getElementById('phase-tempo-tag').textContent = phase.tempo;
+      document.getElementById('phase-desc').textContent = phase.desc;
+      document.getElementById('cycle-duration').textContent = phase.cycleStatus;
+
+      // Update Tags
+      document.getElementById('tag-1').textContent = phase.tags[0];
+      document.getElementById('tag-2').textContent = phase.tags[1];
+      document.getElementById('tag-3').textContent = phase.tags[2];
+
+      // Glow effect
+      document.getElementById('vinyl-glow').style.backgroundColor = phase.colorGlow;
+
+      // If audio is currently playing, adjust synth sound
+      if (isPlayingAudio) {
+        stopAudioPreview();
+        startAudioPreview();
+      }
+    }
+
+    // ==================== WEB AUDIO API SIMULATED PREVIEWS ====================
+    let audioCtx = null;
+    let isPlayingAudio = false;
+    let audioTimer = null;
+    let osc1 = null;
+    let osc2 = null;
+    let gainNode = null;
+
+    function toggleAudioPreview() {
+      if (isPlayingAudio) {
+        stopAudioPreview();
+      } else {
+        startAudioPreview();
+      }
+    }
+
+    function startAudioPreview() {
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!audioCtx) {
+          audioCtx = new AudioContext();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+
+        const phase = musicPhases[currentPhaseIndex];
+        
+        // Tone settings based on phase
+        gainNode = audioCtx.createGain();
+        gainNode.gain.setValueAtTime(0.08, audioCtx.currentTime);
+
+        osc1 = audioCtx.createOscillator();
+        osc2 = audioCtx.createOscillator();
+
+        if (phase.synthType === 'rock') {
+          // Gritty power chord simulation (Sawtooth with slight detune)
+          osc1.type = 'sawtooth';
+          osc1.frequency.setValueAtTime(146.83, audioCtx.currentTime); // D3
+          osc2.type = 'sawtooth';
+          osc2.frequency.setValueAtTime(220.00, audioCtx.currentTime); // A3 (Power fifth)
+        } else if (phase.synthType === 'synth') {
+          // Lush synth-pop square/sine
+          osc1.type = 'square';
+          osc1.frequency.setValueAtTime(261.63, audioCtx.currentTime); // C4
+          osc2.type = 'sine';
+          osc2.frequency.setValueAtTime(329.63, audioCtx.currentTime); // E4
+        } else if (phase.synthType === 'ambient') {
+          // Low meditative sine
+          osc1.type = 'sine';
+          osc1.frequency.setValueAtTime(110.00, audioCtx.currentTime); // A2
+          osc2.type = 'triangle';
+          osc2.frequency.setValueAtTime(164.81, audioCtx.currentTime); // E3
+        } else {
+          // Lo-fi warm triangle
+          osc1.type = 'triangle';
+          osc1.frequency.setValueAtTime(174.61, audioCtx.currentTime); // F3
+          osc2.type = 'sine';
+          osc2.frequency.setValueAtTime(220.00, audioCtx.currentTime); // A3
+        }
+
+        osc1.connect(gainNode);
+        osc2.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+
+        osc1.start();
+        osc2.start();
+
+        isPlayingAudio = true;
+        document.getElementById('play-text').textContent = "Pause Sonic Mood";
+        document.getElementById('audio-status-tag').textContent = `Synthesizing ${phase.genreName}`;
+        document.getElementById('audio-status-tag').classList.add('text-utm-gold');
+
+        // Spin the vinyl
+        document.getElementById('vinyl-disc').classList.add('animate-spin-slow');
+
+        // Auto-pause preview after 15 seconds to avoid annoyance
+        clearTimeout(audioTimer);
+        audioTimer = setTimeout(() => {
+          if (isPlayingAudio) stopAudioPreview();
+        }, 16000);
+
+      } catch (e) {
+        console.error("Audio API error:", e);
+        showToast("Audio unavailable in current browser mode");
+      }
+    }
+
+    function stopAudioPreview() {
+      if (osc1) {
+        try { osc1.stop(); osc1.disconnect(); } catch(e){}
+        osc1 = null;
+      }
+      if (osc2) {
+        try { osc2.stop(); osc2.disconnect(); } catch(e){}
+        osc2 = null;
+      }
+      isPlayingAudio = false;
+      document.getElementById('play-text').textContent = "Simulate Mood Audio";
+      document.getElementById('audio-status-tag').textContent = "Synth Engine Idle";
+      document.getElementById('audio-status-tag').classList.remove('text-utm-gold');
+      document.getElementById('vinyl-disc').classList.remove('animate-spin-slow');
+    }
+
+    // ==================== CANVAS AUDIO VISUALIZER ====================
+    function initCanvasVisualizer() {
+      const canvas = document.getElementById('musicCanvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      
+      let animationFrameId;
+      let bars = 36;
+      let barValues = new Array(bars).fill(10);
+
+      function resizeCanvas() {
+        canvas.width = canvas.parentElement.clientWidth;
+        canvas.height = canvas.parentElement.clientHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      function renderVisualizer() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        const barWidth = (canvas.width / bars) - 2;
+
+        const phase = musicPhases[currentPhaseIndex];
+        const multiplier = isPlayingAudio ? 1.0 : 0.35;
+        const tempoSpeed = (phase.synthType === 'rock') ? 0.12 : 0.06;
+
+        for (let i = 0; i < bars; i++) {
+          const time = Date.now() * tempoSpeed;
+          // Simulated frequency variance
+          let targetHeight = Math.sin(time * 0.05 + i * 0.35) * Math.cos(i * 0.2) * (canvas.height * 0.45);
+          targetHeight = Math.abs(targetHeight) * multiplier + (canvas.height * 0.12);
+
+          // Interpolate
+          barValues[i] += (targetHeight - barValues[i]) * 0.2;
+
+          const x = i * (barWidth + 2);
+          const y = canvas.height - barValues[i];
+
+          // Gold and Maroon Gradient
+          const grad = ctx.createLinearGradient(0, y, 0, canvas.height);
+          grad.addColorStop(0, '#F5B025'); // UTM Gold
+          grad.addColorStop(0.6, '#B3750F');
+          grad.addColorStop(1, '#540B1B'); // UTM Maroon
+
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.roundRect(x, y, barWidth, barValues[i], [2, 2, 0, 0]);
+          ctx.fill();
+        }
+
+        animationFrameId = requestAnimationFrame(renderVisualizer);
+      }
+
+      renderVisualizer();
+    }
+
+    // Interactive Song Suggestion
+    function submitRecommendation() {
+      const input = document.getElementById('rec-input');
+      const val = input.value.trim();
+      if (!val) {
+        showToast("Please enter an artist or track name!");
+        return;
+      }
+      showToast(`Track "${val}" added to Nizam's review radar! 🎧`);
+      input.value = "";
+    }
+
+    // Quick Contact note submission
+    function handleSendMessage() {
+      const sender = document.getElementById('sender-name').value.trim();
+      const msg = document.getElementById('sender-msg').value.trim();
+      if (!msg) {
+        showToast("Please include a brief message or note.");
+        return;
+      }
+      showToast("Thank you! Your message has been recorded.");
+      document.getElementById('sender-name').value = "";
+      document.getElementById('sender-msg').value = "";
+    }
+  </script>
+</body>
+</html>
